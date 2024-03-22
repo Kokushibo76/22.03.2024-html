@@ -1,0 +1,58 @@
+.it1{grid-area:a1;
+    background-color: blue;}
+.it2{grid-area:a2;
+    background-color: yellow;}
+.it3{grid-area:a3;
+    background-color: red;}
+.it4{grid-area:a4;
+    background-color: red;}
+.it5{grid-area:a5;
+    background-color: blue;}
+
+.container2{
+    display: grid;
+    width: 660px;
+    background-color: rgb(17, 17, 82);
+    grid-template-rows: 200px 220px;
+    grid-template-areas: 
+    "a1 a1 a2"
+    "a3 a4 a5";
+    padding: 10px;
+    grid-column-gap: 8px;
+    grid-row-gap: 10px;
+}
+
+.container * {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container3{
+    font-size: 20px;
+    max-width: 40%;
+}
+
+.container1 {
+    display: flex;
+    background-color: lightgrey;
+    width: 300px;
+    padding: 10px;
+}
+
+.orange-square {
+    width: 50px;
+    height: 100px;
+    background-color: orange;
+}
+
+.orange-square:nth-child(2) {
+    margin-right: 10px;
+}
+
+.orange-square:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
